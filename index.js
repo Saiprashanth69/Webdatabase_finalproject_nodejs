@@ -2,7 +2,7 @@ const http= require('http');
 const fs= require('fs');
 const path = require('path');
 const {MongoClient} = require('mongodb');
-const uri ="mongodb+srv://prashanth:prashanth@atlascluster.ospgyhd.mongodb.net/?retryWrites=true&w=majority&appName=AtlasCluster";
+const uri ="mongodb+srv://prashanth:prashanth@atlascluster.ospgyhd.mongodb.net/";
 const client = new MongoClient(uri);
 
 const server   =http.createServer(async(req,res) => {
